@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.quiz-container {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+.question {
+    background-color: #f1f1f1;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+.question-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.option-container {
+    margin-top: 10px;
+}
+.option {
+    background-color: #e1e1e1;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.option:hover {
+    background-color: #d1d1d1;
+}
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.submit-btn:hover {
+    background-color: #45a049;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.question, .option-container {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes win {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.question, .option-container {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.winner {
+    animation: win 2s infinite;
+}
